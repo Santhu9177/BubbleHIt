@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fe00fe, #4facfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.outer-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    width: 80vw;
+    max-width: 900px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.value-box {
+    background: rgba(255,255,255,0.8);
+    padding: 5px 12px;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.bubble {
+    height: 50px;
+    width: 50px;
+    background: radial-gradient(circle at 30% 30%, #a8ff78, #78ffd6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.3s;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    transform: scale(1.15);
+    background: radial-gradient(circle at 30% 30%, #ff9a9e, #fad0c4);
+}
+
+.Starting, .gameOver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.starting-text, .restart-btn {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.starting-text:hover, .restart-btn:hover {
+    transform: scale(1.1);
+}
